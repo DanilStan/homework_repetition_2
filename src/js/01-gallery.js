@@ -18,3 +18,10 @@ const galleryRander = galleryItems.map(img => {
 
 galleryContainer.innerHTML = galleryRander;
 
+galleryContainer.addEventListener('click', onClickImage)
+
+function onClickImage(event) {
+    event.preventDefault();
+    console.log(event.target.dataset.source)
+}
+
